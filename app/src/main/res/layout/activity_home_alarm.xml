@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeAlarm">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="52.1dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="내가 참여한 Talk의 진행 상황"
+        android:textColor="#5ca2f2"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="400dp"
+        android:layout_height="146dp"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="3dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.6"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/picture2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/green_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="10dp"
+            android:text="법안"
+            android:textColor="#41cb35"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="20dp"
+            android:text="대마고 아침운동 폐지"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="38dp"
+            android:text="교육문화체육관광위원회"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="75dp"
+            android:text="법안 제안"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/green_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="75dp"
+            android:text="법안 전달"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="218dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/green_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="248dp"
+            android:layout_marginTop="75dp"
+            android:text="국회 상정"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/green_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="308dp"
+            android:layout_marginTop="75dp"
+            android:text="본회의 통과"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="100dp"
+            android:text="861명 동참"
+            android:textColor="#41cb35"
+            android:textSize="15dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="400dp"
+        android:layout_height="146dp"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="3dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.6"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/card_view1">
+
+        <ImageView
+            android:id="@+id/picture3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/yellowback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="10dp"
+            android:text="미팅"
+            android:textColor="#ffa700"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="20dp"
+            android:text="뒤로시 가기구 학교 확충 토론"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="38dp"
+            android:text="노란 뒤로 가기"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="75dp"
+            android:text="미팅 제안"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/yellowback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="75dp"
+            android:text="의견 전달"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="218dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/yellowback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="248dp"
+            android:layout_marginTop="75dp"
+            android:text="미팅 수락"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/yellowback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="308dp"
+            android:layout_marginTop="75dp"
+            android:text="미팅 완료"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="100dp"
+            android:text="861명 동참"
+            android:textColor="#ffa700"
+            android:textSize="15dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="400dp"
+        android:layout_height="146dp"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="3dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.6"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/card_view2">
+
+        <ImageView
+            android:id="@+id/picture4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/background2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="10dp"
+            android:text="불만"
+            android:textColor="#ff0000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="20dp"
+            android:text="점수를 보고 웃음을 잃었습니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="38dp"
+            android:text="학생들"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="75dp"
+            android:text="불만 제안"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/redback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="75dp"
+            android:text="불만 토론"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="218dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/redback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="248dp"
+            android:layout_marginTop="75dp"
+            android:text="불만 전달"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/redback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="308dp"
+            android:layout_marginTop="75dp"
+            android:text="수신 확인"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="100dp"
+            android:text="861명 동참"
+            android:textColor="#ff0000"
+            android:textSize="15dp" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="400dp"
+        android:layout_height="146dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="3dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/picture1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/background2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="10dp"
+            android:text="법안"
+            android:textColor="#41cb35"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="20dp"
+            android:text="대마고 아침운동 줄이자"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="38dp"
+            android:text="학생들"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="75dp"
+            android:text="법안 제안"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/green_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="75dp"
+            android:text="법안 전달"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="218dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/green_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="248dp"
+            android:layout_marginTop="75dp"
+            android:text="국회 상정"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="67dp"
+            android:src="@drawable/green_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="308dp"
+            android:layout_marginTop="75dp"
+            android:text="본회의 통과"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="100dp"
+            android:text="861명 동참"
+            android:textColor="#41cb35"
+            android:textSize="15dp" />
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

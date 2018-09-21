@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillSearch"
+    android:background="#eaeaea">
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="52.1dp"
+        android:background="@drawable/no_radius_black_border"
+        android:textSize="12dp"
+        android:hint="\t제목과 내용, 작성자로 검색할 수 있습니다."/>
+
+    <ImageButton
+        android:onClick="onClick"
+        android:layout_marginTop="1.05dp"
+        android:layout_width="50.1dp"
+        android:layout_height="50.1dp"
+        android:src="@drawable/search"
+        android:background="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

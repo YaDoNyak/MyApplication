@@ -24,6 +24,7 @@
         android:state_checked="true"
         android:color="#51032d"
         android:title="정치인 미팅"/>
+
     <item
         android:id="@+id/bill"
         android:enabled="true"

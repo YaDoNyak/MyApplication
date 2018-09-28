@@ -2,6 +2,7 @@ package com.example.zingdo.myapplication;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.nfc.Tag;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -20,18 +21,31 @@ public class MyPage extends AppCompatActivity {
     ImageButton change_name;
     AlertDialog.Builder ad;
     TextView name;
+    AlertDialog.Builder builder;
+    ImageButton btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_page);
+        btn_back = findViewById(R.id.back_home);
         change_name = findViewById(R.id.change_name);
         name = findViewById(R.id.name);
-        Button button = (Button)findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        builder = new AlertDialog.Builder(this);
+
+        Button change_password = findViewById(R.id.change_password);
+        change_password.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                ad.show();
+            public void onClick(View v) {
+                LayoutInflater inflater = getLayoutInflater();
+                View view = inflater.inflate(R.layout.dialog_login, null);
+                Button submit = view.findViewById(R.id.buttonSubmit);
+                EditText present_password = view.findViewById(R.id.editText_present_password);
+                EditText change_password = view.findViewById(R.id.editText_change_password);
+                EditText change_password_again = view.findViewById(R.id.editText_change_password_again);
+                AlertDialog dialog = builder.create();
+                builder.setView(view);
+                dialog.show();
             }
         });
     }
@@ -64,18 +78,8 @@ public class MyPage extends AppCompatActivity {
         ad.show();
     }
 
-    void show()
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = getLayoutInflater();
-        View view = inflater.inflate(R.layout.dialog_login, null);
-        builder.setView(view);
-        final Button submit = (Button) view.findViewById(R.id.buttonSubmit);
-        final EditText present_password = (EditText) view.findViewById(R.id.editText_present_password);
-        final EditText change_password = (EditText) view.findViewById(R.id.editText_change_password);
-        final EditText change_password_again = (EditText) view.findViewById(R.id.editText_change_password_again);
-        final AlertDialog dialog = builder.create();
-        dialog.show();
-
+    public void onClick(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

@@ -21,7 +21,7 @@
         </activity>
         <activity android:name=".FindPassword" />
         <!--<activity android:name=".Send_email" />-->
-        <activity android:name=".MainBill" />
+        <activity android:name=".Bill" />
         <activity android:name=".SendEmail" />
         <activity android:name=".Home" />
         <activity android:name=".HomeAlarm" />
